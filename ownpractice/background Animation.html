@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aliceblue;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container{
+            height: 200px;
+            width: 500px;
+            background: linear-gradient(90deg,red,yellow,green);
+            animation: bg 5s linear infinite;
+        }
+        @keyframes bg{
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <h1> Background Animation</h1>
+    </div>
+    
+</body>
+</html>

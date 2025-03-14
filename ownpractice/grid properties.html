@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            height: 50px;
+            background-color: red;
+        }
+        #parent{
+            display: grid;
+            padding: 50px;
+            border: solid black 3px;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .child:first-child, .child:nth-child(2), .child:nth-child(3){
+            grid-column: span 2;
+        }
+        .child:nth-child(4), .child:last-child{
+            grid-column: span 3;
+        }
+        @media only screen and (max-width:400px){
+            #parent{
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            .child:first-child, .child:nth-child(2), .child:nth-child(3), .child:nth-child(4), .child:last-child{
+                grid-column: span 1;
+            }
+            
+        }
+        @media only screen and (min-width:401px) and (max-width:768px){
+            #parent{
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .child:nth-child(4){
+                grid-column: span 2;
+            }  
+            .child:last-child{
+                grid-column:  span 4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid -->
+     <div id="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+     </div>
+</body>
+</html>
