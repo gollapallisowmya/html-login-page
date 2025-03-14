@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 450px;
+            position: relative;
+            left: 700px;
+            transform-style: preserve-3d;
+            transition-duration:2s ;
+        }
+        .container.flip{
+        transform: rotateY(180deg);
+
+     }
+     #d{
+        color: rgb(175, 38, 38);
+        font-size: bold;
+     }
+     .front,.back{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: absolute;
+        backface-visibility: hidden;
+        font-size: 30px;
+     }
+     .front{
+        background-color: rgb(23, 181, 91);
+        color: black;
+     }
+     .back{
+        background-color: lightgray;
+        color: white;
+        transform: rotateY(180deg);
+     }
+
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+        
+        <div class="front">
+            <h1 id="d">register</h1>
+           <form action="">
+             <input type="text" placeholder="enter name"><br><br>
+             <input type="mail" placeholder="enter mail"><br><br>
+             <input type="number" placeholder="phone number"><br><br>
+             <input type="password" placeholder="set password"><br><br>
+             <button type="button" onclick="flip()">Register</button>
+           </form>
+        </div>
+        <div class="back">
+            <h1>login</h1>
+            <form action="">
+                <input type="text" placeholder="enter name"><br><br>
+                <input type="mail" placeholder="enter mail"><br><br>
+                <button type="submit" >login</button>
+              </form>
+        </div>
+        
+    </div>
+    <script>
+        function flip(){
+            document.getElementById('container').classList.add('flip');
+        }
+    </script>
+
+
+</body>
+</html>

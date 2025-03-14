@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            height: 50px;
+            width: 100px;
+            background-color: bisque;
+          border-radius: 20%;
+        }
+        .btn::before{
+            background-color: darkgreen;
+            animation: rotate 2s infinite linear;
+            filter: blur(20px);
+        }
+        .btn.btninner{
+            position: relative;
+            display: flex;
+            width: 100%;
+            z-index:1 ;
+            transition: all 0.18s ease;
+            backdrop-filter: blur(40px);
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Button</button>
+</body>
+</html>
