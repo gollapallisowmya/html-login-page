@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btns{
+            width: 100vh;
+            height:150px ;
+            display: flex;
+            border-radius: 20px;
+            column-gap:2rem;
+            background-color: aqua;
+        }
+        .btn{
+            width: 150px;
+            height:50px ;
+            border-radius: 20px;
+            position: relative;
+            top:  50px;
+            left: 50px;
+            background-color:black;
+            color: white;
+            cursor: pointer;
+            transition: scale 0.25s ease-in,opcity 0.25s ease-in,filter 0.25s ease-in;
+
+        }
+        .btn:hover{
+            background-color:brown;
+            scale: 1.2;
+        }
+        /* .btn:has(.btn:hover).btn:not(hover){
+            scale: 0.8;
+            opacity: 0.8;
+            filter:blur(4px);
+        } */
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button class="btn">Hover me!</button>
+        <button class="btn">Hover me!</button>
+        <button class="btn">Hover me!</button>
+    </div>
+</body>
+</html>
