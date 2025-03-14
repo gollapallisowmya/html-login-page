@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget password</title>
+    <style>
+        *{
+            background-color: aqua;
+        }
+        .b {
+            width: 50%;
+            height: 100%;
+            color: rgb(47, 30, 202);
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+        }
+        .c,input{
+            border-radius: 40px;
+            width: 100%;
+            height: 45px;
+        }
+       .c:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Forget your password?
+        </h1>
+        <p>
+            Please enter your user name and email address below, click OK, then follow the instructions. If you don’t have an email address, please contact your system administrator for assistance at .
+        </p>
+        <div class="b">
+        <label>User Name</label><br>
+        <input type="password" placeholder="password" required><br><br>
+        <label>Email Address</label><br>
+        <input type="email" placeholder="enter email" required><br><br>
+
+        <button type="submit"class="c">OK</button><br><br>
+        <button type="submit"class="c">CANCEL</button>
+        </div>
+    </div>
+</body>
+</html>
