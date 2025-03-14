@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>registration form</h1>
+    <form action="../day3/Login.html">
+        <table>
+    <tr>
+        <td><lable for="name">Enter name</lable></td>
+        <td> : </td>
+        <td><input type="text" name="" id="name" placeholder="name"required> <br><br></td>
+    </tr>
+
+    <tr>
+        <td> <lable for="email">Enter email</lable></td>
+         <td> : </td>
+        <td><input type="email" name="" id="name"placeholder="email" required> <br><br></td>
+    </tr>
+
+    <tr>
+        <td><lable for="phone number">Enter phone number </lable></td>
+        <td> : </td>
+         <td><input type="tel" pattern="[+]{1}[0-9]{12}" title="moblie numbershould include country code" name="" id="name" placeholder="phone number" required><br><br></td>
+    </tr>
+
+     <tr>
+         <td><lable for="password">Set password</lable></td>
+         <td> : </td>
+         <td><input type="text" pattern="[A-Z]{1,2}[a-z]{3,5}[!@#$&*]{1}[0-9]{2,}"name="" id="password"placeholder="password" required> <br><br></td>
+     </tr>
+     <!---[]
+      represents the content
+     {}
+       represents no.of characters-->
+
+    <tr>
+        <td><label for="date">select DOB</label></td>
+        <td> : </td>
+        <td> <input type="date" min="2010-01-01" max="2020-11-30" name="" id="date"> <br><br></td>
+     </tr>
+    
+    <tr>
+      <td><lable for="yop">Select year of passing</lable></td>
+      <td> : </td>
+      <td><input type="month" name="" id="yop"><br><br></td>
+    </tr>
+
+    <tr>
+      <td><lable for="Gender">Select gender</lable></td>
+      <td> : </td>
+      <td>
+        <input type="radio" name="gender" id="Gender"> male
+        <input type="radio" name="gender" id="Gender">female 
+    </td>
+    </tr>
+
+    <tr>
+     <td><lable for="file">upload resume</lable></td>
+     <td> : </td>
+     <td><input type="file" name="" id="file"> <br><br></td>
+    </tr>
+
+    <tr>   
+    <td><lable for="color">select your favourite color</lable></td>
+    <td> : </td>
+    <td><input type="color" id="color"> <br><br></td>
+    </tr>
+    
+  
+    <tr>
+     <td><label for ="addr">enter address:</label><br><br></td>
+     <td> : </td>
+    <td><textarea minlength="10" maxlength="15" cols="70" id="addr"></textarea><br><br></td>
+    </tr>
+
+    <tr>
+    <td colspan="3" style="text-align: center;"><input type="submit" value ="Register"></td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       
+    .d img {
+        width: 20%;
+        height: 250px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    
+    .m img {
+        width: 20%;
+        height: 250px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    
+    .n img {
+        width: 20%;
+        height: 250px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(189, 252, 183);
+        /* background-image: url(https://www.shutterstock.com/image-vector/striped-blue-gradient-hd-background-600nw-1724175436.jpg); */
+        background-size: cover;
+    }
+    
+    .d,.m,.n{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        transform: rotate(360deg);
+        border-radius: 50%;
+        
+    }
+
+    
+    
+    .center {
+        text-align: center;
+        margin-bottom: 30px;
+        
+        
+    }
+    
+    .a {
+        color: rgb(12, 225, 62);
+        text-decoration: none;
+        margin: 0 10px;
+        text-align: center;
+        float:right;
+        transform: rotate(30deg);
+    
+    }
+    
+    .footer {
+        color: rgb(11, 17, 209);
+        text-align: center;
+        padding: 20px;
+        text-decoration: underline;
+    }
+    h1{
+        text-align: center;
+        color: brown;
+        text-decoration: underline;
+    }
+    div:hover{
+            border-radius: 0px 10px;
+            background-color: yellow;
+            color: blue;
+            /* transform: translatey(-10px/10px);//moving y-axis */
+            /* transform: translatex(10px);
+            transform: translateY(10px);
+            transform: scale(1.3);/* for zoom-in*/
+           /* transform: scale(0.7);/*for zoom-out*/
+            /*transform: rotate(360deg); */
+    }
+
+</style>
+</head>
+<body>
+<div id="o">
+    <h1> Two images</h1>
+    <div class="d">
+        <img src="https://wallpapercave.com/wp/RVZzfFn.jpg">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.FEqv7YYMNjXtrVYqo7HHzAHaE7&pid=Api&P=0&h=180">
+    </div>
+    <h1> Three images</h1>
+    <div class="m">
+        <img src="https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg">
+        <img src="http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201804/604377526.jpg">
+        <img src="https://wallsdesk.com/wp-content/uploads/2016/05/Waterfalls-Photos.jpg">
+    </div>
+    <h1>Four images</h1>
+    <div class="n">
+        <img src="http://images2.fanpop.com/image/photos/9400000/Beautiful-Butterflies-butterflies-9481976-1600-1200.jpg">
+        <img src="https://inspirationseek.com/wp-content/uploads/2016/02/Cute-Dog-Photo.jpg">
+        <img src="https://wallpapercave.com/wp/wp3472355.jpg">
+        <img src="http://s1.picswalls.com/wallpapers/2016/03/29/beautiful-nature-desktop-wallpapers_04232231_304.jpg">
+    </div>
+</div>
+<div class="center">
+    <a href="#">Home</a> |
+    <a href="#">Services</a> |
+    <a href="#">Contact Us</a>
+</div>
+<div class="footer">
+    @ All rights reserved.
+</div>
+
+</body>
+</html>

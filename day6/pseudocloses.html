@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(178, 195, 195);
+        }
+        button{
+            padding: 10px;
+            color:white;
+            font-weight: bold;
+            border: white 2px solid;
+            background-color:red ;
+            border-radius: 0px 10px;
+            transition-duration: 0.7s;
+            
+        }
+        button:hover{
+            border-radius: 0px 10px;
+            background-color: yellow;
+            color: blue;
+            /* transform: translatey(-10px/10px);//moving y-axis */
+            transform: translatex(10px);
+            transform: translateY(10px);
+            transform: scale(1.3);/* for zoom-in*/
+            transform: scale(0.7);/* for zoom-out*/
+            transform: rotate(360deg);
+
+        }
+        /* button:active{
+            background-color: yellow;
+            color: blue;
+        } */
+        input:focus{
+            background-color: black;
+        }
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: aqua;
+        }
+        input::placeholder{
+            color:white;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo cls -->
+    <!-- hover -->
+     <button>hover me</button>
+     <a href="link">i'm an anchor tag</a>
+    <!-- focus -->
+    <input type="text"placeholder="name" name="id">
+    <!-- active -->
+</body>
+</html>

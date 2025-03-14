@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 500px;
+            border: solid black 2px;
+            display:flex;
+            justify-content: space-evenly;/*used for x-axis*/
+            align-items: flex-end;/* used for y-axis*/
+            gap: 50px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .child{
+            width: 150px;
+            height:100px ;
+            border: 2px solid rgb(232, 25, 25)  ;
+            background-color:rgb(233, 33, 33);
+            color:white ;
+            flex-grow: 1;
+            flex-direction: column-reverse;
+
+        }
+        .child:nth-child(2){
+            /* align-self: flex-start;/*it is used only single items only */
+            /* flex-grow:1 ; */
+            /* A number specifying how much the item will grow relative to the rest of the flexible items */
+            /* flex-shrink: 1; */
+            /* flex-basis: 500px;// extra width*/
+            flex:1 1 30px;
+            
+         
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+  
+    </div>
+</body>
+</html>
