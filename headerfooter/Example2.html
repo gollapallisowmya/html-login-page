@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            background-color: aqua;
+            height: 100px;
+
+        }
+        article{
+          
+            background-color: blanchedalmond;
+        
+        }
+        aside{
+        
+            background-color: blue;
+        }
+        nav{
+            
+            background-color: brown;
+        }
+        footer{
+            background-color: rgb(162, 239, 27);
+            height: 100px;
+        }
+        #row{
+            display: flex;
+        }
+        #col{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div id="row">
+        <article>Article</article>
+        <div id="col">
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+        </div>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
